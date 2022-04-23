@@ -125,22 +125,12 @@ $(() => {
 
 
 	// Моб. меню
-	$('.mob_header .mob_menu_btn').click((e) => {
+	$('header .mob_menu_btn').click((e) => {
 		e.preventDefault()
 
-		$('.mob_header .mob_menu_btn').addClass('active')
-		$('body').addClass('menu_open')
-		$('header').addClass('show')
-		$('.overlay').fadeIn(300)
-	})
-
-	$('header .mob_close_btn, .overlay').click((e) => {
-		e.preventDefault()
-
-		$('.mob_header .mob_menu_btn').removeClass('active')
-		$('body').removeClass('menu_open')
-		$('header').removeClass('show')
-		$('.overlay').fadeOut(300)
+		$('header .mob_menu_btn').toggleClass('active')
+		$('body').toggleClass('menu_open')
+		$('header .menu').toggleClass('show')
 	})
 
 
@@ -164,10 +154,9 @@ $(() => {
 
 			if ($('body').hasClass('menu_open') && ts > te + 50) {
 				// Свайп справо на лево
-				$('.mob_header .mob_menu_btn').removeClass('active')
+				$('header .mob_menu_btn').removeClass('active')
 				$('body').removeClass('menu_open')
-				$('header').removeClass('show')
-				$('.overlay').fadeOut(300)
+				$('header .menu').removeClass('show')
 			} else if (ts < te - 50) {
 				// Свайп слева на право
 			}

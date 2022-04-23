@@ -3,6 +3,10 @@
     /*-------------------
         Global styles
     -------------------*/
+    .cont
+    {
+        padding: 0 16px;
+    }
 
 
 
@@ -15,22 +19,58 @@
     }
 
 
+    .fancybox__content > .carousel__button.is-close
+    {
+        top: 16px;
+        right: 16px;
 
-    /*-----------------
-        Mob. header
-    -----------------*/
+        width: 36px;
+        height: 35px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head .number
+    {
+        font-size: 32px;
+    }
+
+
+    .accordion_item .head .title
+    {
+        font-size: 24px;
+
+        width: calc(100% - 60px);
+    }
+
+
+
+    /*---------------
+        Load more
+    ---------------*/
+    .load_more
+    {
+        margin-top: 29px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .cont:after
+    {
+        width: calc(100% - 32px);
+    }
 
 
 
     /*-------------
         Sidebar
     -------------*/
-
-
-
-    /*---------------
-        Page head
-    ---------------*/
 
 
 
@@ -43,6 +83,46 @@
     /*------------------
         Form elements
     ------------------*/
+    .form .line
+    {
+        margin-bottom: 16px;
+    }
+
+
+    .form .input
+    {
+        font-size: 14px;
+
+        height: 44px;
+        padding: 0 19px;
+    }
+
+
+    .form textarea
+    {
+        font-size: 14px;
+
+        height: 132px;
+        padding: 17px 19px;
+    }
+
+
+    .form .submit .agree
+    {
+        font-size: 12px;
+        line-height: 16px;
+
+        width: 208px;
+        margin-top: 12px;
+
+        order: 2;
+    }
+
+
+    .form .submit_btn
+    {
+        width: 100%;
+    }
 
 
 
@@ -52,19 +132,296 @@
 
 
 
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .scroll_down
+    {
+        bottom: 24px;
+    }
+
+    .first_section .scroll_down .icon
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .first_section .bg
+    {
+        bottom: 40px;
+    }
+
+
+
     /*-----------------
-        Main slider
+        About block
     -----------------*/
+    .about_block .row
+    {
+        margin-bottom: -24px;
+    }
+
+    .about_block .row > *
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .about_block .item .icon
+    {
+        height: 44px;
+    }
+
+    .about_block .item .icon + div
+    {
+        width: calc(100% - 60px);
+    }
+
+
+
+    /*----------------
+        About head
+    ----------------*/
+    .about_head .scroll_down
+    {
+        bottom: 24px;
+    }
+
+    .about_head .scroll_down .icon
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .about_head .bg
+    {
+        bottom: 80px;
+        left: -500px;
+    }
+
+
+
+    /*-----------------
+        About block
+    -----------------*/
+    .about_block .block_desc
+    {
+        line-height: 24px;
+
+        margin-bottom: 32px;
+    }
+
+
+
+    /*-----------------
+        About basis
+    -----------------*/
+    .about_basis .item .number
+    {
+        font-size: 32px;
+    }
+
+
+    .about_basis .item .title
+    {
+        width: calc(100% - 60px);
+    }
+
+
+    .about_basis .bg
+    {
+        top: -40px;
+        left: -160px;
+    }
+
+
+
+    /*------------------
+        Service head
+    ------------------*/
+    .service_head .scroll_down
+    {
+        bottom: 24px;
+    }
+
+    .service_head .scroll_down .icon
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .service_head .bg
+    {
+        bottom: 80px;
+        left: -500px;
+    }
+
+
+
+    /*------------------
+        Service info
+    ------------------*/
+    .service_info .block_desc
+    {
+        line-height: 24px;
+
+        margin-bottom: 32px;
+    }
+
+
+    .service_info .data > * + *
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*------------------
+        Project head
+    ------------------*/
+    .project_head .thumb img
+    {
+        width: 200px;
+    }
+
+
+    .project_head .scroll_down .icon
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+    /*------------------
+        Project info
+    ------------------*/
+    .project_info .block_desc
+    {
+        line-height: 24px;
+
+        margin-bottom: 32px;
+    }
+
+
+    .project_info .data > * + *
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*---------------
+        Vacancies
+    ---------------*/
+    .vacancies .vacancy .items
+    {
+        font-size: 16px;
+        line-height: 20px;
+
+        padding-left: 20px;
+    }
+
+
+    .vacancies .vacancy ul
+    {
+        padding-left: 20px;
+    }
+
+    .vacancies .vacancy li
+    {
+        font-size: 16px;
+        line-height: 20px;
+
+        padding-left: 36px;
+    }
+
+    .vacancies .vacancy li:before
+    {
+        top: 8px;
+
+        width: 20px;
+        height: 3px;
+    }
+
+
+    .vacancies .vacancy .btn
+    {
+        width: 100%;
+        margin-top: 35px;
+    }
 
 
 
     /*------------
         Footer
     ------------*/
+    footer .cont + .cont
+    {
+        margin-top: 80px;
+    }
+
+
+    footer .logo
+    {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+
+    footer .contacts
+    {
+        width: 100%;
+
+        text-align: left;
+    }
+
+
+    footer .phone
+    {
+        line-height: 24px;
+    }
+
+
+    footer .email
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+        margin-top: 10px;
+    }
+
+
+    footer .location
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        margin-top: 10px;
+    }
+
+
+    footer .copyright
+    {
+        font-size: 12px;
+    }
 
 
 
     /*-----------
         PopUp
     -----------*/
+    .modal .col_left
+    {
+        padding: 32px;
+    }
+
+
+    .modal .data
+    {
+        padding: 32px;
+    }
 }
