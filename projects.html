@@ -419,5 +419,13 @@
 		<script src="js/fancybox.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
+
+		<!-- Яндекс карты -->
+		<script src="http://api-maps.yandex.ru/2.1.75/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
+		<script>
+			$(window).on('load', () => {
+				initMap()
+			})
+		</script>
 	</body>
 </html>

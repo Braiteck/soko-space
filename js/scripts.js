@@ -183,3 +183,34 @@ $(window).on('resize', () => {
 		WW = $(window).width()
 	}
 })
+
+
+
+function initMap() {
+	ymaps.ready(() => {
+		let myMap = new ymaps.Map('map', {
+			center: [55.716042, 37.503998],
+			zoom: 16,
+			controls: []
+		})
+
+		// Кастомный маркер
+		let myPlacemark = new ymaps.Placemark([55.716042, 37.503998], {}, {
+			iconLayout: 'default#image',
+			iconImageHref: 'images/ic_map_marker.svg',
+			iconImageSize: [140, 70],
+			iconImageOffset: [-70, -35]
+		})
+
+		myMap.geoObjects.add(myPlacemark)
+
+		myMap.controls.add('zoomControl', {
+			position: {
+				right: '20px',
+				top: '20px'
+			}
+		})
+
+		myMap.behaviors.disable('scrollZoom')
+	})
+}
