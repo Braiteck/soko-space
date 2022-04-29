@@ -710,6 +710,8 @@ header .mob_menu_btn
     height: 40px;
     margin-left: 16px;
 
+    transition: color .2s linear;
+
     border: 1px solid;
     border-radius: 50%;
 
@@ -722,6 +724,13 @@ header .mob_menu_btn
 header .mob_menu_btn.light
 {
     color: #fff;
+}
+
+.menu_open header .mob_menu_btn.light
+{
+    color: #ef6337;
+
+    transition: color .2s linear .2s;
 }
 
 
